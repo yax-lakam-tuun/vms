@@ -1,4 +1,11 @@
 
+if [ -z "$1" ]; then
+    echo "Please specify vm disk"
+    exit 1
+else
+    vm_disk ="$1"
+fi
+
 qemu-system-aarch64 \
 	-m 4G \
 	-smp 4 \
@@ -12,5 +19,5 @@ qemu-system-aarch64 \
     	-device usb-tablet \
     	-device intel-hda \
     	-device hda-duplex \
-	-drive file=hh-vm.qcow2,format=qcow2,if=virtio \
+	-drive file=$vm_disk,format=qcow2,if=virtio \
 	-net nic -net user
