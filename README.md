@@ -16,13 +16,13 @@ To run the VM, run `run-vm.sh`.
 The script takes one argument, namely the name of the qcow2 image the VM should have.
 The hardware configuration is the same as above.
 
-## Get QEmu EFI image
+## Optional: Get QEmu EFI image
 The EFI image is provided in this repository.
 In case, you need to get it for yourself, follow the steps below
 
 ### Download qemu efi image for arm64
-https://packages.debian.org/bullseye/all/qemu-efi-aarch64/download
+`https://packages.debian.org/bullseye/all/qemu-efi-aarch64/download`
 
 ### Extract QEMU_EFI.fd
 ar -x qemu-efi-aarch64_2020.11-2+deb11u1_all.deb
-
+`QEMU_EFI.fd` resides in the sub archive `data.tar.xy` in path `/usr/share/qemu-efi-aarch64`
