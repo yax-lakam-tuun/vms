@@ -3,7 +3,7 @@ if [ -z "$1" ]; then
     echo "Please specify vm disk"
     exit 1
 else
-    vm_disk ="$1"
+    vm_disk="$1"
 fi
 
 qemu-system-aarch64 \

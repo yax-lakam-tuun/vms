@@ -3,7 +3,7 @@ if [ -z "$1" ]; then
     echo "Please specify vm disk" 
     exit 1
 else
-    vm_disk ="$1"
+    vm_disk="$1"
 fi
 
 echo "Creating VM partition"
@@ -24,6 +24,6 @@ qemu-system-aarch64 \
     	-device usb-tablet \
     	-device intel-hda \
     	-device hda-duplex \
-	-drive file=$vm_disk.qcow2,format=qcow2,if=virtio \
+	-drive file=$vm_disk,format=qcow2,if=virtio \
 	-net nic -net user \
 	-boot menu=on
