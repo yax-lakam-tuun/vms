@@ -24,5 +24,5 @@ In case, you need to get it for yourself, follow the steps below
 `https://packages.debian.org/bullseye/all/qemu-efi-aarch64/download`
 
 ### Extract QEMU_EFI.fd
-ar -x qemu-efi-aarch64_2020.11-2+deb11u1_all.deb
+`ar -x qemu-efi-aarch64_2020.11-2+deb11u1_all.deb`
 `QEMU_EFI.fd` resides in the sub archive `data.tar.xy` in path `/usr/share/qemu-efi-aarch64`
